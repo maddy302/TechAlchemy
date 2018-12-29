@@ -1,0 +1,124 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>New Node App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script> -->
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <div class="container">
+    <h1>My App</h1>
+    <%= new Date()%>
+    <ul>
+    <% for(var i=0;i< items.length; i++){%>
+        <li><%= items[i].desc %></li>
+      <%}  %>
+    </ul>
+
+    <form action="/add" method="post">
+    <input type="text" name="newItem"/>
+    
+    <fieldset>
+    <!-- <div class="form-group" id="skillsx">
+        <select class="custom-select" name="skillx">
+          <option selected="">Open this select menu</option>
+          <option value="1">Accounting</option>
+          <option value="2">Computer Science</option>
+          <option value="3">Information Management</option>
+          <option value="4">Physics</option>
+          <option value="5">Political Science</option>
+          <option value="6">Properties</option>
+          <option value="7">Banking, Finance, Insurance</option>
+          <option value="8">Management Science</option>
+          <option value="9">Military</option>
+          <option value="10">Religions</option>
+        </select>
+      </div>
+      <div class="form-group" id="interestsx">
+        <select class="custom-select" name="interestsx">
+          <option selected="">Open this select menu</option>
+          <option value="1">Accounting</option>
+          <option value="2">Computer Science</option>
+          <option value="3">Information Management</option>
+          <option value="4">Physics</option>
+          <option value="5">Political Science</option>
+          <option value="6">Properties</option>
+          <option value="7">Banking, Finance, Insurance</option>
+          <option value="8">Management Science</option>
+          <option value="9">Military</option>
+          <option value="10">Religions</option>
+        </select>
+      </div> -->
+      <div class="form-group" id="skills">
+        <select class="custom-select" name="skill">
+          <option selected="">Open this select menu</option>
+          <option value="Accounting">Accounting</option>
+          <option value="Computer Science">Computer Science</option>
+          <option value="Information Management">Information Management</option>
+          <option value="Physics">Physics</option>
+          <option value="Political Science">Political Science</option>
+          <option value="Properties">Properties</option>
+          <option value="Banking, Finance, Insurance">Banking, Finance, Insurance</option>
+          <option value="Management Science">Management Science</option>
+          <option value="Military">Military</option>
+          <option value="Religions">Religions</option>
+        </select>
+      </div>
+      <div class="form-group" id="interests">
+        <select class="custom-select" name="interests">
+          <option selected="">Open this select menu</option>
+          <option value="Accounting">Accounting</option>
+          <option value="Computer Science">Computer Science</option>
+          <option value="Information Management">Information Management</option>
+          <option value="Physics">Physics</option>
+          <option value="Political Science">Political Science</option>
+          <option value="Properties">Properties</option>
+          <option value="Banking, Finance, Insurance">Banking, Finance, Insurance</option>
+          <option value="Management Science">Management Science</option>
+          <option value="Military">Military</option>
+          <option value="Religions">Religions</option>
+        </select>
+      </div>
+      <input type = "submit"/>
+    </fieldset>
+    </form>
+    <ul>
+        <li><%= skill_x%></li>
+        <li><%= interest_x%></li>
+    </ul>
+</div>
+<div class="container" id="idea_resutls">
+<%= idea_results%>
+
+</div>
+<!-- <div class="container" id="ideas_table">
+
+  <table class="table table-hover">
+      <thead>
+          <tr>
+            <th scope="col">Index</th>
+            <th scope="col">Idea</th>
+            <th scope="col">Create</th>
+          </tr>
+          <tbody>
+              <% for(var i=0;i< items.length; i++){%>
+                <tr class="table-active">
+                  <td><%= i%></td>
+                  <td><%= items[i]%></td>
+                  <td>button</td>
+                </tr>
+                
+              <%}  %>
+          </tbody>
+        </thead>  
+  </table>
+
+</div> -->
+<script src="jquery/dist/jquery.js"></script>
+<script src="bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>

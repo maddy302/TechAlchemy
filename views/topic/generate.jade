@@ -1,0 +1,54 @@
+
+extends ../layout
+
+block content	
+		div.panel.panel-default
+			div.panel-heading Welcome to #{title}
+			div.panel-body 
+				form#generateForm.form-horizontal
+					div.form-group
+						label.col-md-4.control-label Interest
+						div(style='width:150px; margin:0px auto;')
+							select#example-getting-started(name= 'interest')
+								.container
+									.row
+										.col-md-6
+											option(value= "" disabled = "true" selected="true") Enter the Interest
+										- for (var i = 0; i < user.interests.length; ++i) {
+												option(value= "#{user.interests[i]}") #{user.interests[i]}
+										- }
+
+					div.form-group
+						label.col-md-4.control-label Skills
+						div(style='width:150px; margin:0px auto;')
+							select.example-getting-started(name = "skills")
+								.container
+									.row
+										.col-md-6
+											option(value= "" disabled = "true" selected="true") Enter the Skill
+											- for (var i = 0; i < user.skills.length; ++i) {
+													option(value= "#{user.skills[i]}") #{user.skills[i]}
+											- }
+
+					div.form-group
+						div.col-md-6.col-md-offset-4
+							button(type="submit").btn.btn-primary Submit
+							//- div#submitAlert.alert-required Email is not right
+							
+		table.table.table-bordered#generate-table
+			thead
+				tr
+					th(scope='col') Generated Idea
+					th(scope='col') Actions
+
+			tbody
+			
+
+
+			
+				
+
+
+
+
+
