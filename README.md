@@ -2,4 +2,5 @@
 
 1. Clone the project.
 2. Install all the dependencies by the command npm install
-3. Start the server by node app.js
+3. Resolve database connections.
+4. Ta Da!
